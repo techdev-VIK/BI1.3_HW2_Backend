@@ -22,6 +22,10 @@ intializeDatabase();
 
 
 
+app.get('/', async(req, res) => {
+    res.send('Welcome to Hotels Website')
+})
+
 
 async function createHotel(newHotel){
     try {
